@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd3b504-1392-40e6-b874-ae3417111a37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/MyList.java" afterDir="false" />
+    <list default="true" id="bfd3b504-1392-40e6-b874-ae3417111a37" name="Changes" comment="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,11 +87,24 @@
       <workItem from="1713471477158" duration="1259000" />
       <workItem from="1713473123320" duration="626000" />
       <workItem from="1713804712598" duration="7289000" />
-      <workItem from="1713863047811" duration="4693000" />
+      <workItem from="1713863047811" duration="8148000" />
     </task>
+    <task id="LOCAL-00001" summary="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class.">
+      <option name="closed" value="true" />
+      <created>1713885709984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713885709984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class." />
+    <option name="LAST_COMMIT_MESSAGE" value="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class." />
   </component>
 </project>
