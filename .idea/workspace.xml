@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd3b504-1392-40e6-b874-ae3417111a37" name="Changes" comment="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class.">
+    <list default="true" id="bfd3b504-1392-40e6-b874-ae3417111a37" name="Changes" comment="I have added the documentation of each method in the MyArr&#10; and also changed the implementation of the add method.">
+      <change afterPath="$PROJECT_DIR$/src/MyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,25 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/User/IdeaProjects/ADS_Assignment2/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/User/IdeaProjects/ADS_Assignment2/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,6 +90,12 @@
       <workItem from="1713473123320" duration="626000" />
       <workItem from="1713804712598" duration="7289000" />
       <workItem from="1713863047811" duration="8148000" />
+      <workItem from="1713889456010" duration="3068000" />
+      <workItem from="1714151934166" duration="1447000" />
+      <workItem from="1714153561386" duration="4301000" />
+      <workItem from="1714194048333" duration="1611000" />
+      <workItem from="1714198494817" duration="680000" />
+      <workItem from="1714236052094" duration="9880000" />
     </task>
     <task id="LOCAL-00001" summary="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class.">
       <option name="closed" value="true" />
@@ -97,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713885709984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I have added the documentation of each method in the MyArr&#10; and also changed the implementation of the add method.">
+      <option name="closed" value="true" />
+      <created>1713889813048</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713889813048</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class." />
-    <option name="LAST_COMMIT_MESSAGE" value="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class." />
+    <MESSAGE value="I have added the documentation of each method in the MyArr&#10; and also changed the implementation of the add method." />
+    <option name="LAST_COMMIT_MESSAGE" value="I have added the documentation of each method in the MyArr&#10; and also changed the implementation of the add method." />
   </component>
 </project>

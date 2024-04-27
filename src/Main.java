@@ -1,8 +1,28 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+import interfaces.MyList;
+
 public class Main {
     public static void main(String[] args) {
-        MyArrayList<Integer> myList = new MyArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Which list do you want to test?");
+        System.out.println("1: MyLinkedList");
+        System.out.println("2: MyArrayList");
+        System.out.print("Enter choice (1 or 2): ");
+        int choice = scanner.nextInt();
+
+        MyList<Integer> myList;
+        if (choice == 1) {
+            myList = new MyLinkedList<>();
+            System.out.println("Testing MyLinkedList");
+        } else if (choice == 2) {
+            myList = new MyArrayList<>();
+            System.out.println("Testing MyArrayList");
+        } else {
+            System.out.println("Invalid choice");
+            scanner.close();
+            return;
+        }
 
         // Add elements
         myList.add(10);
@@ -57,20 +77,21 @@ public class Main {
         System.out.println("Index of 25: " + myList.indexOf(25));
         System.out.println("Last index of 5: " + myList.lastIndexOf(5));
 
+
+        // Size of the list
+        System.out.println("Size of the list: " + myList.size());
+
         // Clear the list
         myList.clear();
         System.out.print("After clearing list: ");
         printList(myList);
-
-        // Size of the list
-        System.out.println("Size of the list: " + myList.size());
     }
 
     /**
-     * Prints all elements in the MyArrayList in a readable format.
-     * @param list The MyArrayList to print.
+     * Prints all elements in the MyList in a readable format.
+     * @param list The MyList to print.
      */
-    private static void printList(MyArrayList<Integer> list) {
+    private static void printList(MyList<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + " ");
         }
