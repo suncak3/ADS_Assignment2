@@ -1,6 +1,9 @@
+package Data_Structures;
+
 import interfaces.MyList;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class MyLinkedList<T> implements MyList<T>{
     private MyNode<T> head = null;
@@ -310,16 +313,21 @@ public class MyLinkedList<T> implements MyList<T>{
         return current;
     }
 
-    @Override
-    public Iterator<T> iterator(){
+    public Iterator<T> iterator() {
         return new Iterator<T>() {
+            private MyNode<T> current = head;
+
             @Override
             public boolean hasNext() {
-                return false;
+                return current != null;
             }
+
             @Override
             public T next() {
-                return null;
+                if (current == null) throw new NoSuchElementException();
+                T data = current.element;
+                current = current.next;
+                return data;
             }
         };
     }

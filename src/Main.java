@@ -1,23 +1,27 @@
 import java.util.Scanner;
+
+import Data_Structures.MyArrayList;
+import Data_Structures.MyLinkedList;
+import Data_Structures.MyQueue;
 import interfaces.MyList;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
 
         System.out.println("Which list do you want to test?");
-        System.out.println("1: MyLinkedList");
-        System.out.println("2: MyArrayList");
+        System.out.println("1: Data_Structures.MyLinkedList");
+        System.out.println("2: Data_Structures.MyArrayList");
         System.out.print("Enter choice (1 or 2): ");
         int choice = scanner.nextInt();
 
         MyList<Integer> myList;
         if (choice == 1) {
             myList = new MyLinkedList<>();
-            System.out.println("Testing MyLinkedList");
+            System.out.println("Testing Data_Structures.MyLinkedList");
         } else if (choice == 2) {
             myList = new MyArrayList<>();
-            System.out.println("Testing MyArrayList");
+            System.out.println("Testing Data_Structures.MyArrayList");
         } else {
             System.out.println("Invalid choice");
             scanner.close();
@@ -85,15 +89,43 @@ public class Main {
         myList.clear();
         System.out.print("After clearing list: ");
         printList(myList);
-    }
+    }*/
 
     /**
      * Prints all elements in the MyList in a readable format.
      * @param list The MyList to print.
      */
-    private static void printList(MyList<Integer> list) {
+    /*private static void printList(MyList<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + " ");
+        }
+        System.out.println();*/
+
+        MyQueue<Integer> myQueue = new MyQueue<>();
+
+
+        myQueue.enqueue(52);
+        myQueue.enqueue(66);
+        myQueue.enqueue(77);
+        System.out.println("After enqueuing elements: ");
+        printQueue(myQueue);
+
+
+        System.out.println("Peek of queue: " + myQueue.peek());
+
+        System.out.println("Dequeued element: " + myQueue.dequeue());
+        System.out.println("After dequeuing one element: ");
+        printQueue(myQueue);
+
+        System.out.println("Is the queue empty? " + myQueue.empty());
+
+        System.out.println("Size of the queue: " + myQueue.size());
+
+    }
+
+    private static void printQueue(MyQueue<Integer> queue) {
+        for (Integer item : queue) {
+            System.out.print(item + " ");
         }
         System.out.println();
     }
