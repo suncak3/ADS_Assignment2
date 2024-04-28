@@ -2,9 +2,10 @@ package Data_Structures;
 
 import interfaces.MyList;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 
- public class MyArrayList<T> implements MyList<T>{
+public class MyArrayList<T> implements MyList<T>{
     private T[] arr;
     private int size;
 
@@ -264,17 +265,24 @@ import java.util.Iterator;
             throw new IndexOutOfBoundsException("index is not correct");
         }
     }
-    @Override
-    public Iterator<T> iterator(){
-        return new Iterator<T>() {
-            @Override
-            public boolean hasNext() {
-                return false;
-            }
-            @Override
-            public T next() {
-                return null;
-            }
-        };
-    }
-}
+     @Override
+     public Iterator<T> iterator() {
+         return new Iterator<T>() {
+             private int currentIndex = 0;
+
+             @Override
+             public boolean hasNext() {
+                 return currentIndex < size();
+             }
+
+             @Override
+             public T next() {
+                 if (!hasNext()) {
+                     throw new NoSuchElementException();
+                 }
+                 return get(currentIndex++);
+             }
+         };
+     }
+
+ }

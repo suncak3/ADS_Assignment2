@@ -283,7 +283,9 @@ public class MyLinkedList<T> implements MyList<T>{
         for(int i = 0; i < array.length - 1; i++){
             swapped = false;
             for (int j = 0; j < size - 1 - i; j++) {
-                if(((Comparable)array[j]).compareTo(array[j + 1]) > 0){
+                Comparable<T> current = (Comparable<T>) array[j];
+                T next = (T) array[j + 1];
+                if(current.compareTo(next) > 0){
                     Object temp = array[j];
                     array[j] = array[j+1];
                     array[j+1] = temp;
