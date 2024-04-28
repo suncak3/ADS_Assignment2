@@ -19,6 +19,10 @@ public class MyLinkedList<T> implements MyList<T>{
         }
     }
 
+    /**
+     * Adda the element at the end of the list.
+     * @param element element to be added.
+     */
     @Override
     public void add(T element) {
         MyNode<T> t = tail;
@@ -33,12 +37,22 @@ public class MyLinkedList<T> implements MyList<T>{
         size++;
     }
 
+    /**
+     * Replace the element at the specified index.
+     * @param index index of the element to be replaced
+     * @param element new element at the index.
+     */
     @Override
     public void set(int index, T element){
         MyNode<T> t = getNode(index);
         t.element = element;
     }
 
+    /**
+     * Inserts given element at the specified index.
+     * @param index index at which new element is to be inserted.
+     * @param element element to be inserted.
+     */
     @Override
     public void add(int index, T element){
         if(index == size){
@@ -57,6 +71,10 @@ public class MyLinkedList<T> implements MyList<T>{
         size++;
     }
 
+    /**
+     * Adds element at the beginning.
+     * @param element element to be added.
+     */
     @Override
     public void addFirst(T element){
         MyNode<T> h = head;
@@ -71,26 +89,47 @@ public class MyLinkedList<T> implements MyList<T>{
         size++;
     }
 
+    /**
+     * Adds given element at the end.
+     * @param element element to be added.
+     */
     @Override
     public void addLast(T element){
         add(element);
     }
 
+    /**
+     * Returns the element at the specified index.
+     * @param index index of the given element.
+     * @return the element at the given index.
+     */
     @Override
     public T get(int index) {
         return getNode(index).element;
     }
 
+    /**
+     * Returns the element at the beginning of the list.
+     * @return first element in the list.
+     */
     @Override
     public T getFirst() {
         return getNode(0).element;
     }
 
+    /**
+     * Returns the element at the end of the list.
+     * @return last element in the list.
+     */
     @Override
     public T getLast() {
         return getNode(size - 1).element;
     }
 
+    /**
+     * Removes the element at the specified index.
+     * @param index index of element to be removed.
+     */
     @Override
     public void remove(int index) {
         MyNode<T> node = getNode(index);
@@ -110,16 +149,25 @@ public class MyLinkedList<T> implements MyList<T>{
         size--;
     }
 
+    /**
+     * Removes the first element of the list.
+     */
     @Override
     public void removeFirst() {
         remove(0);
     }
 
+    /**
+     * Removes the last element of the list.
+     */
     @Override
     public void removeLast() {
         remove(size - 1);
     }
 
+    /**
+     * Sorts the list in ascending order.
+     */
     @Override
     public void sort(){
         Object[] array = this.toArray();
@@ -132,6 +180,11 @@ public class MyLinkedList<T> implements MyList<T>{
         }
     }
 
+    /**
+     * Return the index of the given element, or -1 if there is no such element.
+     * @param element element which index is to be fined.
+     * @return index of the specified element, either -1 if list doesn't contain such element.
+     */
     @Override
     public int indexOf(Object element){
         int index = 0;
@@ -146,6 +199,12 @@ public class MyLinkedList<T> implements MyList<T>{
         return -1;
     }
 
+    /**
+     * Returns the index of last occurrence of the given element,
+     * or -1 if there is no such element
+     * @param element element which index is to be fined.
+     * @return index of last occurrence of the specified element.
+     */
     @Override
     public int lastIndexOf(Object element){
         int index = size - 1;
@@ -160,6 +219,11 @@ public class MyLinkedList<T> implements MyList<T>{
         return -1;
     }
 
+    /**
+     * Returns true if list has the given element, or false otherwise.
+     * @param element element to search for.
+     * @return true if list has the given element, or false otherwise.
+     */
     @Override
     public boolean exists(Object element){
         MyNode<T> h = head;
@@ -172,6 +236,10 @@ public class MyLinkedList<T> implements MyList<T>{
         return false;
     }
 
+    /**
+     * Converts the list to the array with all its elements.
+     * @return array which contains all elements of the list.
+     */
     @Override
     public Object[] toArray() {
         Object[] array = new Object[size];
@@ -184,6 +252,9 @@ public class MyLinkedList<T> implements MyList<T>{
         return array;
     }
 
+    /**
+     * Removes all elements of the list.
+     */
     @Override
     public void clear(){
         head = null;
@@ -191,11 +262,19 @@ public class MyLinkedList<T> implements MyList<T>{
         size = 0;
     }
 
+    /**
+     * Return number of elements in the list.
+     * @return
+     */
     @Override
     public int size(){
         return size;
     }
 
+    /**
+     * Simple bubble sort algorithm to sort the array in ascending order.
+     * @param array array to be sorted.
+     */
     private void bubbleSort(Object[] array){
         boolean swapped;
         for(int i = 0; i < array.length - 1; i++){
@@ -214,6 +293,11 @@ public class MyLinkedList<T> implements MyList<T>{
         }
     }
 
+    /**
+     * Returns the element at the specified index.
+     * @param index index of the node.
+     * @return the node at the given index.
+     */
     private MyNode<T> getNode(int index){
         if(index < 0 || index >= size){
             throw new IndexOutOfBoundsException("Incorrect index");
