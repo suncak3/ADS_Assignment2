@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd3b504-1392-40e6-b874-ae3417111a37" name="Changes" comment="I have created MyQueue class with its methods, added the documentation of each method in commends and tested all methods">
-      <change afterPath="$PROJECT_DIR$/src/Data_Structures/MyMinHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Data_Structures/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Testers/MyArrayListTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Testers/MyLinkedListTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Testers/MyMinHeapTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Testers/MyQueueTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Testers/MyStackTester.java" afterDir="false" />
+    <list default="true" id="bfd3b504-1392-40e6-b874-ae3417111a37" name="Changes" comment="Final commit. I have created two new data structure with documentation in the commends. Created new testing process and additional classes for this purpose.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data_Structures/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_Structures/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data_Structures/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data_Structures/MyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testers/MyLinkedListTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testers/MyLinkedListTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +96,8 @@
       <workItem from="1714198494817" duration="680000" />
       <workItem from="1714236052094" duration="11163000" />
       <workItem from="1714300560234" duration="9511000" />
-      <workItem from="1714328794097" duration="14944000" />
+      <workItem from="1714328794097" duration="15362000" />
+      <workItem from="1714370547066" duration="271000" />
     </task>
     <task id="LOCAL-00001" summary="I have created the MyList interface with all necessary methods. Also, I have created MyArrayList with all its methods and tested it main class.">
       <option name="closed" value="true" />
@@ -147,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714311423664</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Final commit. I have created two new data structure with documentation in the commends. Created new testing process and additional classes for this purpose.">
+      <option name="closed" value="true" />
+      <created>1714345423956</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714345423957</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +159,7 @@
     <MESSAGE value="I have created the MyLinkedList class with implementation of all methods in MyList interface. I have changed the testing process to make it easier." />
     <MESSAGE value="Added documentation in commends for each method of MyLinkedList class." />
     <MESSAGE value="I have created MyQueue class with its methods, added the documentation of each method in commends and tested all methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have created MyQueue class with its methods, added the documentation of each method in commends and tested all methods" />
+    <MESSAGE value="Final commit. I have created two new data structure with documentation in the commends. Created new testing process and additional classes for this purpose." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit. I have created two new data structure with documentation in the commends. Created new testing process and additional classes for this purpose." />
   </component>
 </project>

@@ -1,11 +1,12 @@
 package Testers;
 
+import Data_Structures.MyArrayList;
 import Data_Structures.MyLinkedList;
 
 import java.util.Scanner;
 
 public class MyLinkedListTester<T> {
-    private MyLinkedList<T> list = new MyLinkedList<>();
+    private MyLinkedList<Integer> list = new MyLinkedList<>();
 
     public void test(Scanner scanner) {
         int choice;
@@ -37,20 +38,20 @@ public class MyLinkedListTester<T> {
 
             switch (choice) {
                 case 1:
-                    T element =  (T) scanner.nextLine();
+                    int element = scanner.nextInt();
                     list.add(element);
                     break;
                 case 2:
-                    T firstElement = (T) scanner.nextLine();
+                    int firstElement = scanner.nextInt();
                     list.addFirst(firstElement);
                     break;
                 case 3:
-                    T lastElement = (T) scanner.nextLine();
+                    int lastElement = scanner.nextInt();
                     list.addLast(lastElement);
                     break;
                 case 4:
                     System.out.print("Enter an element: ");
-                    T elementAtIndex = (T) scanner.nextLine();
+                    int elementAtIndex = scanner.nextInt();
                     System.out.print("Enter index to add element at: ");
                     int index = scanner.nextInt();
                     list.add(index, elementAtIndex);
@@ -60,7 +61,7 @@ public class MyLinkedListTester<T> {
                     int setIndex = scanner.nextInt();
                     scanner.nextLine();
                     System.out.print("Enter new element: ");
-                    T newElement = (T) scanner.nextLine();
+                    int newElement = scanner.nextInt();
                     list.set(setIndex, newElement);
                     break;
                 case 6:
@@ -87,17 +88,17 @@ public class MyLinkedListTester<T> {
                     break;
                 case 12:
                     System.out.print("Enter element: ");
-                    T checkElement = (T) scanner.nextLine();
+                    int checkElement = scanner.nextInt();
                     System.out.println("Element exists: " + list.exists(checkElement));
                     break;
                 case 13:
                     System.out.print("Enter element: ");
-                    T findElement = (T) scanner.nextLine();
+                    int findElement = scanner.nextInt();
                     System.out.println("Index of element: " + list.indexOf(findElement));
                     break;
                 case 14:
                     System.out.print("Enter element: ");
-                    T lastFindElement = (T) scanner.nextLine();
+                    int lastFindElement = scanner.nextInt();
                     System.out.println("Last index of element: " + list.lastIndexOf(lastFindElement));
                     break;
                 case 15:
